@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Thomas Parslow. MIT License.
 //
 
-#import "RCTView.h"
+#import <React/RCTView.h>
 
 @class RCTEventDispatcher;
 

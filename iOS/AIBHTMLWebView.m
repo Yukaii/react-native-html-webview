@@ -9,9 +9,9 @@
 #import "AIBHTMLWebView.h"
 
 #import <UIKit/UIKit.h>
-#import "RCTEventDispatcher.h"
-#import "UIView+React.h"
-#import "RCTView.h"
+#import <React/RCTEventDispatcher.h>
+#import <React/UIView+React.h>
+#import <React/RCTView.h>
 
 @interface AIBHTMLWebView () <UIWebViewDelegate>
 
@@ -80,7 +80,7 @@
     _webView.frame = frame;
     frame.size.height = [[_webView stringByEvaluatingJavaScriptFromString: @"document.documentElement.scrollHeight"] floatValue];
     NSNumber *height = [NSNumber numberWithFloat: frame.size.height];
-    
+
     NSMutableDictionary *event = [[NSMutableDictionary alloc] initWithDictionary: @{
                                                                                     @"target": self.reactTag,
                                                                                     @"contentHeight": height

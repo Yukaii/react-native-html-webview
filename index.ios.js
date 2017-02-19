@@ -2,12 +2,15 @@
 // remove javascript and any other dangerous tags. Link clicks will
 // generate events but won't automatically change what is displayed.
 
-var React = require('react-native');
+var React = require('react');
 var {
-  View,
-  PropTypes,
-  requireNativeComponent
+  PropTypes
 } = React;
+var {
+	View,
+	requireNativeComponent
+} = require('react-native');
+
 
 var safeHtml = require('safe-html');
 var _ = require('underscore');

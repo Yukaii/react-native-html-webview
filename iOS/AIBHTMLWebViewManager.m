@@ -8,7 +8,7 @@
 
 #import "AIBHTMLWebViewManager.h"
 #import "AIBHTMLWebView.h"
-#import "RCTBridge.h"
+#import <React/RCTBridge.h>
 
 #import <UIKit/UIKit.h>
 
